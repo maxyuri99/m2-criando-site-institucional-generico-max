@@ -1,0 +1,18 @@
+:root {
+    --background: #212529;
+    --primary: #12b886;
+    --primary-dark: #12b88620;
+    --text-primary: #868e96;
+    --text-secondary: #FEFEFE;
+    --texr-dark: #515252;
+    --radius: 8px;
+    --radius-card: 12px 12px 0 0;
+}
+
+::backdrop{
+    --background-color: rgba (0,0,0,0.6);
+}
+
+body{
+    background-color: var(--background);
+}
