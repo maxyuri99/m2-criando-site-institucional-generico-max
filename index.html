@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/style.css">
+    
     <title>Página Institucional Genérica</title>
 </head>
+
 <body>
-    <header>
-        <p>Generic Course</p>
-        <button>Entrar para a próxima turma</button>
+    <header class="header__container">
+        <p class="header__title">Generic Course</p>
+        <button class="subscribe__button">Entrar para a próxima turma</button>
     </header>
-    <main>
-        <div>
-            <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem fuga accusantium sunt ratione pariatur eius laborum exercitationem accusamus illum laudantium, similique dolor, suscipit iste! Mollitia iure temporibus nam eligendi!</p>
+    <main class="main__container">
+        <div class="about-us__container">
+            <h1 class="about-us__title">Desenvolvendo <span class="about-us__title--span">suas</span> próximas
+                habilidades</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem fuga accusantium sunt ratione
+                pariatur eius laborum exercitationem accusamus illum laudantium, similique dolor, suscipit iste!
+                Mollitia iure temporibus nam eligendi!</p>
             <span>Sobre nós</span>
         </div>
         <div>
             <h2>Quem somos nós?</h2>
             <span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aut, quos consequatur nemo error deserunt iste, fugit natus ipsum enim voluptatibus dolorem ea ab sint accusamus quas? Facilis, maiores in.</p>
-            </span>            
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aut, quos consequatur nemo error
+                    deserunt iste, fugit natus ipsum enim voluptatibus dolorem ea ab sint accusamus quas? Facilis,
+                    maiores in.</p>
+            </span>
         </div>
         <section>
             <div>
                 <h2>Dúvidas frequentes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorem veritatis veniam fuga. Itaque error quae et magni maxime ab quibusdam enim, animi dicta. Illo odio eum ex quo at?</p>
-                <span>Entrar para próxima turma</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorem veritatis veniam fuga. Itaque
+                    error quae et magni maxime ab quibusdam enim, animi dicta. Illo odio eum ex quo at?</p>
+                <button class="subscribe__button subscribe__button--main">Entrar para próxima turma</button>
             </div>
             <div>
                 <span>
                     <h3>Quanto custa o curso?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima magnam beatae, facilis modi rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus
+                        officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima
+                        magnam beatae, facilis modi rem!</p>
                 </span>
                 <span>
                     <h3>Quais matérias vou pagar?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima magnam beatae, facilis modi rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus
+                        officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima
+                        magnam beatae, facilis modi rem!</p>
                 </span>
                 <span>
                     <h3>Tenho direito à cancelamento?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima magnam beatae, facilis modi rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus
+                        officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima
+                        magnam beatae, facilis modi rem!</p>
                 </span>
                 <span>
                     <h3>O acesso do curso é vitalício?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima magnam beatae, facilis modi rem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus
+                        officia laborum quis soluta deleniti culpa obcaecati dignissimos eos! Cupiditate quaerat minima
+                        magnam beatae, facilis modi rem!</p>
                 </span>
             </div>
         </section>
@@ -58,7 +84,9 @@
                                 <h3>Júlia Lima</h3>
                                 <p>Aluna na turma 2019</p>
                             </span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis nisi distinctio eaque, dignissimos deleniti nesciunt molestiae incidunt ex id corporis saepe dolore et culpa, consequuntur sequi. Aspernatur, similique sit.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis nisi distinctio
+                                eaque, dignissimos deleniti nesciunt molestiae incidunt ex id corporis saepe dolore et
+                                culpa, consequuntur sequi. Aspernatur, similique sit.</p>
                         </div>
                     </li>
                     <li>
@@ -67,7 +95,9 @@
                                 <h3>Carlos Silva</h3>
                                 <p>Aluno na turma 2020</p>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime dolores vitae adipisci repudiandae ipsa cumque sint nemo qui mollitia consequatur quo numquam, animi deserunt placeat. Minima veritatis deleniti velit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id maxime dolores vitae adipisci
+                                repudiandae ipsa cumque sint nemo qui mollitia consequatur quo numquam, animi deserunt
+                                placeat. Minima veritatis deleniti velit.</p>
                         </div>
                     </li>
                     <li>
@@ -76,7 +106,9 @@
                                 <h3>Camila Souza</h3>
                                 <p>Aluna na turma 2019</p>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, a veritatis, nostrum culpa accusantium libero deserunt quasi sit quaerat doloribus commodi dolor accusamus deleniti aperiam eius! Neque doloribus esse alias.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, a veritatis, nostrum
+                                culpa accusantium libero deserunt quasi sit quaerat doloribus commodi dolor accusamus
+                                deleniti aperiam eius! Neque doloribus esse alias.</p>
                         </div>
                     </li>
                     <li>
@@ -85,20 +117,37 @@
                                 <h3>Matheus Erick</h3>
                                 <p>Aluno na turma 2018</p>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, laboriosam aliquam cum iste, nihil, culpa quibusdam architecto necessitatibus modi deserunt dolorem nemo. Voluptate incidunt, culpa tempora veritatis veniam consequuntur. Dolorum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, laboriosam aliquam cum
+                                iste, nihil, culpa quibusdam architecto necessitatibus modi deserunt dolorem nemo.
+                                Voluptate incidunt, culpa tempora veritatis veniam consequuntur. Dolorum.</p>
                         </div>
                     </li>
                 </ul>
             </div>
             <div>
                 <h2>O que nossos alunos comentam?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorum sint. Deleniti, hic repellendus incidunt distinctio voluptatem eius, consequuntur eligendi ipsa laborum animi rem ipsum aspernatur dolorem consequatur nobis sed!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorum sint. Deleniti, hic
+                    repellendus incidunt distinctio voluptatem eius, consequuntur eligendi ipsa laborum animi rem ipsum
+                    aspernatur dolorem consequatur nobis sed!</p>
             </div>
         </section>
     </main>
     <footer>
         <h3>Generic Course</h3>
     </footer>
+
+    <dialog class="modal__controller">
+        <div class="modal__container">
+            <h4 class="modal__title">Cadastro</h4>
+            <button class="modal__close">X</button>
+            <p class="modal__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <input type="text" class="email" placeholder="Digitar email">
+            <button>Entrar na lista para próxima turma</button>
+        </div>
+    </dialog>
+
     <script src="./src/scripts/script.js"></script>
 </body>
+
 </html>
