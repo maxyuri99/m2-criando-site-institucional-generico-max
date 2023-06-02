@@ -1,29 +1,33 @@
 :root {
     --background: #343a40;
     --background-secondary: #212529;
+    --background-third: #191C1F;
     --primary: #4C6EF5;
     --button-hover: #364FC7;
     --text-primary: #f8f9fa;
-    --text-secondary: #adb5bd; 
-    --text-secondary-clearer: #ced4da; 
+    --text-secondary: #adb5bd;
+    --text-secondary-clearer: #ced4da;
     --shadow: 0 4px 40px -20px #212529;
+
     --font-primary: 'Lato', sans-serif;
+
     --padding-default: 14px 26px;
+    --font-size-p: 11px;
 }
 
-::backdrop{
-    --background-color: rgba (0,0,0,0.6)
+::backdrop {
+    --background-color: rgba (0, 0, 0, 0.6);
 }
 
-body{
+body {
     background-color: var(--background);
     color: var(--text-primary);
 
     font-family: var(--font-primary);
 }
 
-.header__container{
-    height: 55px;
+.header__container {
+    height: 60px;
     width: 100vw;
 
     background-color: var(--background-secondary);
@@ -37,11 +41,13 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+
     z-index: 9999;
+
     gap: 100px;
 }
 
-.header__title{
+.header__title {
     color: var(--text-primary);
 
     font-size: 17px;
@@ -49,33 +55,69 @@ body{
     line-height: 44px;
 }
 
+.footer__container {
+    margin-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    left: 0px;
+
+    background: var(--background-secondary);
+}
+
 input {
     background-color: var(--background);
-    
-    padding: var(--padding-default);
     color: var(--text-secondary);
+
+    padding: var(--padding-default);
 }
 
 input:focus {
     background-color: var(--background-secondary);
+    border: 1px solid var(--primary);
 }
 
-input:valid{
-    background-color: #191C1F; 
+input:valid {
+    background-color: var(--background-third);
 }
 
-.subscribe__button{
+.subscribe__button {
     width: 177px;
     height: 36px;
-  
+
     color: var(--text-primary);
 
     font-size: 12px;
     font-weight: 400;
 }
 
-.first-text__button:hover, .subscribe__button:hover{
+.first-text__button:hover,
+.subscribe__button:hover {
     background-color: var(--button-hover);
-    border: 0px solid ;
+    border: 0px solid;
     cursor: pointer;
+}
+
+
+.aline-text__container {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10%;
+}
+
+p {
+    font-weight: 400;
+    font-size: var(--font-size-p);
+    line-height: 20px;
 }
