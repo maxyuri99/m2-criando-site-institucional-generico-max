@@ -1,17 +1,137 @@
-/* ------------------------------- Coloque sua estilização aqui ------------------------------- */
-
-:root {
-    --background: #212529;
-    --primary: #12b886;
-    --primary-dark: #12b88620;
-    --text-primary: #868e96;
-    --text-secondary: #FEFEFE;
-    --texr-dark: #515252;
-    --radius: 8px;
-    --radius-card: 12px 12px 0 0;
-    --font-primary: 'Poppins', sans-serif;
+.subscribe__button--header {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--text-primary);
 }
 
-body{
-    background-color: var(--background);
+.main__container {
+    margin-top: 100px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.first-text__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    gap: 25px;
+}
+
+.first-text__title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.first-text__title--highlight {
+    color: var(--primary);
+}
+
+.first-text__container > p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.first-text__button {
+    width: 100px;
+    height: 36px;
+    color: var(--text-primary);
+    background-color: var(--primary);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.second-text__container {
+    height: 190px;
+    background-color: var(--background-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    gap: 70px;
+    overflow: hidden;
+}
+
+.second-text__section--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-text__section--text {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.second-text__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 140%;
+    text-align: start;
+}
+
+.second-text__text {
+    margin-left: 200px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: start;
+}
+
+.faq__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 200px;
+    gap: 100px;
+}
+
+.faq-title__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+}
+
+.faq-title__title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: start; 
+}
+
+.faq-text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.faq-title__container > p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: start;
+}
+
+

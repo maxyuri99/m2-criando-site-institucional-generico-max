@@ -15,40 +15,44 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/style.css">
-    
+
     <title>Página Institucional Genérica</title>
 </head>
 
 <body>
     <header class="header__container">
         <p class="header__title">Generic Course</p>
-        <button class="subscribe__button">Entrar para a próxima turma</button>
+        <button class="subscribe__button subscribe__button--header">Entrar para a próxima turma</button>
     </header>
     <main class="main__container">
-        <div class="about-us__container">
-            <h1 class="about-us__title">Desenvolvendo <span class="about-us__title--span">suas</span> próximas
+        <div class="first-text__container">
+            <h1 class="first-text__title">Desenvolvendo <span class="first-text__title--highlight">suas</span> próximas
                 habilidades</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem fuga accusantium sunt ratione
                 pariatur eius laborum exercitationem accusamus illum laudantium, similique dolor, suscipit iste!
                 Mollitia iure temporibus nam eligendi!</p>
-            <span>Sobre nós</span>
+            <button class="first-text__button">Sobre nós</button>
         </div>
-        <div>
-            <h2>Quem somos nós?</h2>
-            <span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aut, quos consequatur nemo error
+        <section class="second-text__container">
+            <section class="second-text__section--title">
+                <h2 class="second-text__title">Quem somos nós?</h2>
+            </section>
+            <section class="second-text__section--text">
+                <p class="second-text__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, aut,
+                    quos consequatur nemo
+                    error
                     deserunt iste, fugit natus ipsum enim voluptatibus dolorem ea ab sint accusamus quas? Facilis,
                     maiores in.</p>
-            </span>
-        </div>
-        <section>
-            <div>
-                <h2>Dúvidas frequentes</h2>
+            </section>
+        </section>
+        <section class="faq__container">
+            <div class="faq-title__container">
+                <h2 class="faq-title__title">Dúvidas frequentes</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorem veritatis veniam fuga. Itaque
                     error quae et magni maxime ab quibusdam enim, animi dicta. Illo odio eum ex quo at?</p>
                 <button class="subscribe__button subscribe__button--main">Entrar para próxima turma</button>
             </div>
-            <div>
+            <div class="faq-text__container">
                 <span>
                     <h3>Quanto custa o curso?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, assumenda. Nulla vero accusamus
@@ -75,10 +79,10 @@
                 </span>
             </div>
         </section>
-        <section>
-            <div>
-                <ul>
-                    <li>
+        <section class="testimonial__container">
+            <div class="testimonial-list__container">
+                <ul class="testimonial-text-list__container">
+                    <li class="testimonial-list__item">
                         <div>
                             <span>
                                 <h3>Júlia Lima</h3>
@@ -89,7 +93,7 @@
                                 culpa, consequuntur sequi. Aspernatur, similique sit.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="testimonial-list__item">
                         <div>
                             <span>
                                 <h3>Carlos Silva</h3>
@@ -100,7 +104,7 @@
                                 placeat. Minima veritatis deleniti velit.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="testimonial-list__item">
                         <div>
                             <span>
                                 <h3>Camila Souza</h3>
@@ -111,7 +115,7 @@
                                 deleniti aperiam eius! Neque doloribus esse alias.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="testimonial-list__item">
                         <div>
                             <span>
                                 <h3>Matheus Erick</h3>
@@ -124,7 +128,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="testimonial-quote__container">
                 <h2>O que nossos alunos comentam?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorum sint. Deleniti, hic
                     repellendus incidunt distinctio voluptatem eius, consequuntur eligendi ipsa laborum animi rem ipsum
@@ -132,8 +136,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <h3>Generic Course</h3>
+    <footer class="footer__container">
+        <h3 class="footer__title">Generic Course</h3>
     </footer>
 
     <dialog class="modal__controller">
@@ -142,7 +146,7 @@
             <button class="modal__close">X</button>
             <p class="modal__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <input type="text" class="email" placeholder="Digitar email">
+            <input type="email" class="modal_input" placeholder="Digitar email" required>
             <button>Entrar na lista para próxima turma</button>
         </div>
     </dialog>
