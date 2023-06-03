@@ -1,7 +1,7 @@
 :root {
-    --background: #343a40;
-    --background-secondary: #212529;
-    --background-third: #191C1F;
+    --background: #212529; 
+    --background-secondary: #191C1F;
+    --background-third: #343a40;
     --primary: #4C6EF5;
     --button-hover: #364FC7;
     --text-primary: #f8f9fa;
