@@ -14,7 +14,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/texts.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    
 
     <title>Página Institucional Genérica</title>
 </head>
@@ -22,27 +26,27 @@
 <body>
     <header class="header__container">
         <section class="aline-text__container">
-            <p class="header__title">Generic Course</p>
-            <button class="subscribe__button subscribe__button--header">Entrar para a próxima turma</button>
+            <p class="header__title title-1">Generic Course</p>
+            <button class="subscribe__button--header subscribe__button button-2 button-hover">Entrar para a próxima turma</button>
         </section>
     </header>
     <main class="main__container">
         <section class="aline-text__container first-text__container">
-            <h1 class="first-text__title">Desenvolvendo <span class="first-text__title--highlight">suas</span>
+            <h1 class="first-text__title title-2">Desenvolvendo <span class="first-text__title--highlight">suas</span>
                 próximas
                 habilidades</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem fuga accusantium sunt ratione
+            <p class="first__text text-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem fuga accusantium sunt ratione
                 pariatur eius laborum exercitationem accusamus illum laudantium, similique dolor, suscipit iste!
                 Mollitia iure temporibus nam eligendi!</p>
-            <button class="first-text__button">Sobre nós</button>
+            <button class="first-text__button button-1 button-hover">Sobre nós</button>
         </section>
         <section class="second-text__container">
             <section class="aline-text__container">
                 <section class="second-text__section--title">
-                    <h2 class="second-text__title">Quem somos nós?</h2>
+                    <h2 class="second-text__title title-3">Quem somos nós?</h2>
                 </section>
                 <section class="second-text__section--text">
-                    <p class="second-text__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
+                    <p class="second-text__text text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
                         aut,
                         quos consequatur nemo
                         error
@@ -53,11 +57,11 @@
         </section>
         <section class="aline-text__container faq__container">
             <section class="faq-title__container">
-                <h2 class="faq-title__title">Dúvidas frequentes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorem veritatis veniam fuga.
+                <h2 class="faq-title__title title-3">Dúvidas frequentes</h2>
+                <p class="faq-text__p text-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor dolorem veritatis veniam fuga.
                     Itaque
                     error quae et magni maxime ab quibusdam enim, animi dicta. Illo odio eum ex quo at?</p>
-                <button class="subscribe__button subscribe__button--main">Entrar para próxima turma</button>
+                <button class="subscribe__button--main subscribe__button button-1 button-hover">Entrar para próxima turma</button>
             </section>
             <section class="faq-text__container">
                 <span>
@@ -135,8 +139,8 @@
             </ul>
             <section class="testimonial-quote__container">
                 <section class="testimonial-quote__section">
-                    <h2>O que nossos alunos comentam?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorum sint. Deleniti, hic
+                    <h2 class="textimonial-quote__title title-1">O que nossos alunos comentam?</h2>
+                    <p class="testimonial-quote__text text-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolorum sint. Deleniti, hic
                         repellendus incidunt distinctio voluptatem eius, consequuntur eligendi ipsa laborum animi rem
                         ipsum
                         aspernatur dolorem consequatur nobis sed!</p>
@@ -145,19 +149,19 @@
         </section>
     </main>
     <footer class="footer__container">
-        <h3 class="footer__title">Generic Course</h3>
+        <h3 class="footer__title title-1">Generic Course</h3>
     </footer>
 
     <dialog class="modal__controller">
         <section class="modal__container">
             <section class="modal-cadastro__section">
-                <h4 class="modal__title">Cadastro</h4>
+                <h4 class="modal__title title-1">Cadastro</h4>
                 <button class="modal__close">X</button>
             </section>
-            <p class="modal__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            <p class="modal__text text-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             <input type="modal-email__input" class="modal_input" placeholder="Digitar email" required>
-            <button class="subscribe__button modal__button">Entrar na lista para próxima turma</button>
+            <button class="modal__button subscribe__button button-1 button-hover">Entrar na lista para próxima turma</button>
         </section>
     </dialog>
 

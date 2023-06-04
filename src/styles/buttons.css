@@ -1,0 +1,53 @@
+.button-1{
+    font-weight: var(--font-weight-2);
+    font-size: var(--text-1-size);
+
+    color: var(--text-primary);
+    background-color: var(--primary);
+}
+
+.button-2{
+    font-weight: var(--font-weight-2);
+    font-size: var(--text-1-size);
+
+    color: var(--text-primary);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--text-primary);
+}
+
+.first-text__button {
+    width: 100px;
+    height: 36px;
+}
+
+.subscribe__button {
+    width: 177px;
+    height: 36px;
+}
+
+.button-hover:hover{
+    background-color: var(--button-hover);
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.subscribe__button--main {
+    color: var(--text-primary);
+    background-color: var(--primary);
+}
+
+input {
+    background-color: var(--background);
+    color: var(--text-secondary);
+
+    padding: var(--padding-default);
+}
+
+input:focus {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--primary);
+}
+
+input:valid {
+    background-color: var(--background-third);
+}

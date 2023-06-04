@@ -1,7 +1,7 @@
 :root {
-    --background: #343a40;
-    --background-secondary: #212529;
-    --background-third: #191C1F;
+    --background: #212529;
+    --background-secondary: #191C1F;
+    --background-third: #343a40;
     --primary: #4C6EF5;
     --button-hover: #364FC7;
     --text-primary: #f8f9fa;
@@ -11,19 +11,32 @@
 
     --font-primary: 'Lato', sans-serif;
 
+    --font-weight-1: 600;
+    --font-weight-2: 400;
+
+    --line-height-1: 20px;
+
+    --title-1-size: 20px;
+    --title-2-size: 35px;
+    --title-3-size: 25px;
+
+    --text-1-size: 11px;
+
+    --button-1-size: 12px;
+
     --padding-default: 14px 26px;
-    --font-size-p: 11px;
 }
 
 ::backdrop {
-    --background-color: rgba (0, 0, 0, 0.6);
+    --background-backdrop-color: rgba(0, 0, 0, 0.6);
 }
 
 body {
     background-color: var(--background);
-    color: var(--text-primary);
 
     font-family: var(--font-primary);
+
+    overflow-x: hidden;
 }
 
 .header__container {
@@ -32,6 +45,7 @@ body {
 
     background-color: var(--background-secondary);
     border-bottom: 1px solid var(--primary);
+
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -48,8 +62,6 @@ body {
 }
 
 .header__title {
-    color: var(--text-primary);
-
     font-size: 17px;
     font-weight: 600;
     line-height: 44px;
@@ -57,6 +69,8 @@ body {
 
 .footer__container {
     margin-top: 70px;
+
+    background: var(--background-secondary);
 
     display: flex;
     flex-direction: column;
@@ -67,43 +81,7 @@ body {
     width: 100vw;
     height: 60px;
     left: 0px;
-
-    background: var(--background-secondary);
 }
-
-input {
-    background-color: var(--background);
-    color: var(--text-secondary);
-
-    padding: var(--padding-default);
-}
-
-input:focus {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--primary);
-}
-
-input:valid {
-    background-color: var(--background-third);
-}
-
-.subscribe__button {
-    width: 177px;
-    height: 36px;
-
-    color: var(--text-primary);
-
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.first-text__button:hover,
-.subscribe__button:hover {
-    background-color: var(--button-hover);
-    border: 0px solid;
-    cursor: pointer;
-}
-
 
 .aline-text__container {
     width: 100%;
@@ -114,10 +92,4 @@ input:valid {
     align-items: center;
 
     gap: 10%;
-}
-
-p {
-    font-weight: 400;
-    font-size: var(--font-size-p);
-    line-height: 20px;
 }
